@@ -13,5 +13,6 @@ jobs:
       - name: print-pr-title
         env:
           TITLE: ${{ github.event.pull_request.title }}
-        run echo "PR TITLE $TITLE"
+        run: |
+          echo "PR TITLE $TITLE"
 
