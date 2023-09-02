@@ -2,10 +2,8 @@
 # https://www.conventionalcommits.org/en/v1.0.0/
 name: pr-title-checker
 on:
-  pull_request:
-    - opened
-    - edited
-    - synchronize 
+  pull_request: 
+    types: [opened, edited]
 jobs:
   print-pr-title:
     runs-on: ubuntu-latest
