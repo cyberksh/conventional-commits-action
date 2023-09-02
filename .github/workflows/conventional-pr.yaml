@@ -1,11 +1,7 @@
 # Check PR titles should match conventional commits
 # https://www.conventionalcommits.org/en/v1.0.0/
 name: pr-title-checker
-on:
-  push:
-  pull_request:
-    types: [opened, synchronize]
-
+on: pull_request
 jobs:
   print-pr-title:
     runs-on: ubuntu-latest
